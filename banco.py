@@ -24,11 +24,12 @@ for n  in senha:
             print(f"Seu depósito de {deposito} foi concluído. Seu saldo agora é de {saldo + deposito}. ")
         if op == "Saldo":
             print(f"Seu saldo é de {saldo}.")
-
+    while True:
         print("Deseja realizar outra operação?")
         quest = input("[1]-Sim  [2]-Não ")
         if quest == "2":
-            print("Até logo!")
+            print("Obrigado, até logo!")
+            break
         if quest == "1":
             print ("Qual operação deseja realizar?")
             op = input ("Saque, Depósito, Saldo:")
@@ -42,6 +43,7 @@ for n  in senha:
             print(f"Seu saldo é de {saldo}.")
           
     break
+
 
 
 
